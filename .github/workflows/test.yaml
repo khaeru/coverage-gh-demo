@@ -30,7 +30,7 @@ jobs:
       working-directory: foo
       run: pytest --color=yes . --cov .
 
-    - uses: khaeru/coverage-gh@main
+    - uses: khaeru/coverage-gh@fix/subdir
       with:
         data-file: foo/.coverage
         token: ${{ github.token }}
